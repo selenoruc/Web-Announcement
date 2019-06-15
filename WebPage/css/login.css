@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+    background: url("../images/2_3.jpg") center center fixed;
+}
+.loginBox{
+    width: 300px;
+    padding: 50px;
+    position: absolute;
+    background: rgb(43, 51, 61);
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    border-radius: 50px;
+    border: 4px solid rgb(1, 112, 192);
+    opacity: 0.88;
+}
+.loginBox h1{
+    color: ghostwhite;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.loginBox input[type = "text"], .loginBox input[type = "password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 2px auto;
+    text-align: center;
+    border: 2px solid rgb(1, 112, 192);
+    padding: 14px 10px;
+    width: 200px;
+    outline: none;
+    color: ghostwhite;
+    border-radius: 24px;
+    transition: 0.25s;
+}
+.loginBox input[type = "text"]:focus, .loginBox input[type = "password"]:focus{
+    width: 300px;
+    border-color: ghostwhite;
+}
+
+.loginBox input[type = "submit"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(1, 112, 192);
+    padding: 14px 10px;
+    width: 130px;
+    outline: none;
+    color: ghostwhite;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    font-size: 14px;
+}
+.loginBox input[type = "submit"]:hover{
+    background: rgb(1, 112, 192);
+    border: 2px solid rgb(1, 112, 192);
+}
