@@ -1,0 +1,25 @@
+<html>
+<head>
+  <title>Giriş Yap</title>
+  <link rel="stylesheet" type="text/css" href="css/login.css"> <!--Stil dosyası import ediliyor -->
+  <script src="js/login.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/><!--Siteyi Responsive yapar--> 
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="css/glyphicons.css" rel="stylesheet" media="screen" />
+    
+</head>
+<body>
+    <a href="index.php"><button type="button" style=" width: 110px; height: 50px;
+    background-color: rgb(43, 51, 61); border-radius: 20px;
+    border: 2px solid rgb(1, 112, 192); margin: 1%; color:white"><i class="glyphicon glyphicon-home"></i>Ana Sayfa</button></a> 
+  <form class="loginBox" action ="toLogin.php" method ="post"> <!-- Giriş yapmak için textboxlar ve butonun bulunduğu bölüm -->
+    <h1>Giriş</h1>
+  	<input  type="text" placeholder="Kullanıcı adı" name="username" id="username"  autofocus/><br>
+  	<input  type="password" placeholder="Şifre" name="password"  id="password" /><br>
+    <input  type="submit" value="Giriş" name="btn_giris" onclick="checkFields()" onsubmit="checkFields()"/>
+  </form>  
+  
+</body>
+</html>
